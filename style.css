@@ -1,0 +1,35 @@
+/* Reset default browser spacing */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Center everything on the screen */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #FFF4F9;
+}
+
+/* Make emojis big and clickable */
+.emoji {
+    font-size: 12rem;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* Hide emojis until they are active */
+.close,
+.open {
+    display: none;
+}
+
+/* Show the active emoji */
+.close.active,
+.open.active {
+    display: block;
+}
